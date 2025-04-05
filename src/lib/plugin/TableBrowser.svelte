@@ -47,7 +47,7 @@
 			params.set("select", `rowid AS _, ${select}`);
 			params.set("offset", offset.toString());
 			params.set("limit", limit.toString());
-			if () {
+			if (order) {
 				if (cols.includes(order)) {
 					params.set("order", order);
 				} else {
