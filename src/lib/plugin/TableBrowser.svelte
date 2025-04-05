@@ -47,8 +47,10 @@
 			params.set("select", `rowid AS _, ${select}`);
 			params.set("offset", offset.toString());
 			params.set("limit", limit.toString());
-			if (order) {
-				params.set("order", order);
+			if () {
+				if (cols.includes(order)) {
+					params.set("", order);
+				}
 				params.set("dir", dir);
 			}
 			const res = await fetch(`/api/db/${database}/${table}/data?${params.toString()}`);
