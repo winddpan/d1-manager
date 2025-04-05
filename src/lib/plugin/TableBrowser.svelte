@@ -50,6 +50,8 @@
 			if () {
 				if (cols.includes(order)) {
 					params.set("", order);
+				} else {
+					params.set("", "");
 				}
 				params.set("dir", dir);
 			}
