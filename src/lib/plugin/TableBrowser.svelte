@@ -49,9 +49,9 @@
 			params.set("limit", limit.toString());
 			if () {
 				if (cols.includes(order)) {
-					params.set("", order);
+					params.set("order", order);
 				} else {
-					params.set("", "");
+					params.set("order", "");
 				}
 				params.set("dir", dir);
 			}
